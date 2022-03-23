@@ -24,7 +24,7 @@ body{
     padding: 10px;
 }
 
-span{
+.glyphicon .glyphicon-menu-hamburger{
     font-size: 22px;
     color: rgba(158, 158, 158, 0.467);
 }
