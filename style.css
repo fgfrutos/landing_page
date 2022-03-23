@@ -83,7 +83,7 @@ body{
 }
 
 .Subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
     color: white;
 
@@ -116,17 +116,18 @@ body{
     margin: 20px;
     border: 1px solid rgba(238, 238, 238, 0.713);
     max-width: 450px;
+    box-shadow: 5px 5px; /*Discover from serendipity. We could add cool shadow effects!*/
 }
 
 .info .text-header {
     margin: 0px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 900;
     color: chocolate;
 }
 
 .info .subtext {
-    font-size: 12px;
+    font-size: 8px;
     color: black;
     text-align: center;
 }
