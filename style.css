@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+body, html{
     font-family: Roboto, sans-serif;
     min-height: 100vh; /*Body covers the full viewing range*/
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(images/background-image.jpg); /*With this we set a image as a background for the full body.
