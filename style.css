@@ -9,6 +9,7 @@ body{
                                                         If needed, we can set a container with different images*/
     background-repeat: no-repeat;/*With this, the ackground image don't repeat to cover the full body while keep the initial size*/
     background-size: cover;/*Finally, background image cover the full body, so if we resieze the page, background image is resize too*/
+    justify-content: space-between;
 }
 
 .header,
@@ -16,15 +17,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header{
     background-color: white;
     box-shadow: 10px 5px 5px rgb(194, 194, 194); /*Insert shadow in header*/
     padding: 10px;
 }
 
-.glyphicon .glyphicon-menu-hamburger{
+
+.toggle, .glyphicon .glyphicon-menu-hamburger{
     font-size: 22px;
     color: rgba(158, 158, 158, 0.467);
 }
@@ -43,4 +42,11 @@ body{
 
 #logo {
     height: 50px;
+}
+
+.footer {
+    justify-content: center;
+}
+.footer > *{
+    font-size: 12px;
 }
