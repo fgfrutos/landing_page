@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: Roboto, sans-serif;
+    height: 100vh; /*Body covers the full viewing range*/
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/background-image.jpg); /*With this we set a image as a background for the full body.
+                                                        If needed, we can set a container with different images*/
+    background-repeat: no-repeat;/*With this, the ackground image don't repeat to cover the full body while keep the initial size*/
+    background-size: cover;/*Finally, background image cover the full body, so if we resieze the page, background image is resize too*/
+}
+
+.header,
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(194, 194, 194); /*Insert shadow in header*/
+    padding: 10px;
+}
+
+span{
+    font-size: 22px;
+    color: rgba(158, 158, 158, 0.467);
+}
+
+.sign-up{
+    font-size: 12px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.sign-up:hover{
+    background-color: rgb(107, 107, 255);
+    color: white;
+}
+
+#logo {
+    height: 50px;
+}
