@@ -115,7 +115,7 @@ body{
     gap: 10px;
     margin: 20px;
     border: 1px solid rgba(238, 238, 238, 0.713);
-    max-width: 450px;
+    max-width: 310px;
     box-shadow: 5px 5px; /*Discover from serendipity. We could add cool shadow effects!*/
 }
 
