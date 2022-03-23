@@ -148,6 +148,7 @@ body{
 .Gallery {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 0 auto;
     gap: 5px;
     justify-content: center;
     margin-bottom: 10px;
@@ -158,4 +159,5 @@ body{
     border-radius: 10px;
     height: 100px;
     width: 150px;
+    object-fit: cover;
 }
