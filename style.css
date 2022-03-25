@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body, html{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     min-height: 100vh; /*Body covers the full viewing range*/
     max-width: 100%;
     display: flex;
@@ -27,24 +27,29 @@ body, html{
 
 
 .toggle, .glyphicon .glyphicon-menu-hamburger{
-    font-size: 22px;
+    font-size: 16px;
     color: rgba(158, 158, 158, 0.467);
 }
 
-.sign-up{
-    font-size: 12px;
-    border: none;
-    background-color: white;
-    border-radius: 15px;
+.header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.link{
+    font-size: 14px;
+    color: rgba(158, 158, 158, 0.905);
+
 }
 
-.sign-up:hover{
-    background-color: chocolate;
-    color: white;
+.link:hover, .toggle:hover{
+    color: chocolate;
+    text-decoration: none;
 }
 
 #logo {
     height: 50px;
+    margin-left: 150px;
 }
 
 .footer {
@@ -70,10 +75,10 @@ body, html{
 .main-top {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha for opacity*/
-    width: 80%;
 }
 
 .Title, .Subtitle, .Gallery-Title {
@@ -94,7 +99,6 @@ body, html{
     display: flex;
     flex:auto;
     flex-direction: column;
-    gap: 10px;
     justify-content: space-evenly;
     align-items: center;
     background-color:rgba(210, 105, 30, 0.8);
@@ -140,7 +144,7 @@ body, html{
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha for opacity*/
-    width: 80%;
+    width: 100%;
     padding: 6px;
     gap: 10px;
     margin-bottom: 20px;
@@ -161,4 +165,40 @@ body, html{
     height: 100px;
     width: 150px;
     object-fit: cover;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(248, 125, 36, 0.99);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 40px;
+    gap: 10px;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-su > * {
+    color: white;
+}
+
+.text-su .text {
+    font-weight: bolder;
+}
+
+.sign-up-button{
+    padding: 0px 20px;
+    background-color: rgba(248, 125, 36, 0.99);
+    border-color: white;
+    color: white;
+    border-color: 1px solid white;
+    border-radius: 5px;
+}
+
+.sign-up-button:hover {
+    background-color: white;
+    color: chocolate;
+    border-color: white;
 }
