@@ -77,7 +77,7 @@ body, html{
     justify-content: space-between;
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;width: 80%;
     background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha for opacity*/
 }
 
@@ -86,6 +86,9 @@ body, html{
     color:chocolate;
     text-align: center;
     padding: 10px;
+}
+.Title {
+    font-weight: bolder;
 }
 
 .Subtitle {
@@ -175,7 +178,7 @@ body, html{
     border-radius: 5px;
     padding: 40px;
     gap: 10px;
-    width: 70%;
+    width: 440px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
