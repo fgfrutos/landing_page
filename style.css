@@ -19,8 +19,11 @@ body, html{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(./images/Background.jpg) center center;
-    background-size: cover;
+      url(images/Background.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     height: 100vh;
   }
   
