@@ -1,209 +1,265 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poiret+One&family=Roboto:wght@100&display=swap');
 
 body, html{
-    font-family: 'Roboto', sans-serif !important;
-    min-height: 100vh; /*Body covers the full viewing range*/
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(images/background-image.jpg); /*With this we set a image as a background for the full body.
-                                                        If needed, we can set a container with different images*/
-    background-repeat: no-repeat;/*With this, the background image don't repeat to cover the full body while keep the initial size*/
-    background-size: cover;/*Finally, background image cover the full body, so if we resieze the page, background image is resize too*/
-    justify-content: space-between;
-    flex:auto;
-    background-attachment: fixed;
-}
-
-.header,
- .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0px 5px 5px 0px rgb(194, 194, 194); /*Insert shadow in header*/
-    padding: 10px;
-}
-
-
-.toggle, .glyphicon .glyphicon-menu-hamburger{
-    font-size: 16px;
-    color: rgba(158, 158, 158, 0.467);
-}
-
-.header-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.link{
-    font-size: 14px;
-    color: rgba(158, 158, 158, 0.905);
-
-}
-
-.link:hover, .toggle:hover{
-    color: chocolate;
-    text-decoration: none;
-}
-
-#logo {
-    height: 50px;
-    margin-left: 150px;
-}
-
-.footer {
-    justify-content: center;
-    box-shadow: none;
-}
-.footer > *{
-    font-size: 8px;
-}
-
-.main {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    flex:1;
-}
-
-.main > * {
-    align-items: center;
-}
-
-
-.main-top {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha for opacity*/
-}
-
-.Title, .Subtitle, .Gallery-Title {
-    font-size: 22px;
-    color:chocolate;
-    text-align: center;
-    padding: 10px;
-}
-.Title {
-    font-weight: bolder;
-}
-
-.Subtitle {
-    font-size: 16px;
-    font-weight: lighter;
-    color: white;
-
-
-}
-.main-middle{
-    display: flex;
-    flex:auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color:rgba(210, 105, 30, 0.8);
+    font-family: 'Dancing Script', cursive;
+    height: 100%; /*Body covers the full viewing range*/
     width: 100%;
-    padding: 8px;
+    margin: 0; /*No blank space*/
+    padding: 0;
 }
 
-.info-cont {
+#starting-site {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(images/Background.jpg) center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .header {
+      display: flex;
+      padding: 20px;
+      justify-content: flex-end;
+  } 
+
+  button {
+      color: white;
+      padding: .6rem .5rem;
+      border-radius: 5px;
+      border: 1px white solid;
+      background-color: transparent;
+  }
+
+  button:hover {
+      background-color: #66c0b3;
+  }
+
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    width:20rem;
+	height:20rem;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+  }
+  #title {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+
+  #sub-title {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+
+  }
+
+  h1 {
+    text-transform: capitalize;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+
+}
+
+h2:after {
+    content: "";
+    display: block;
+    background-color: #66c0b3;
+    height: 3px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    width: 70px;
+}
+
+h3 {
+    margin:0;
+    margin-bottom: .5rem;
+    text-align: center;
+    font-size: 1rem;
+
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha fopr opacity*/
-    padding: 8px;
-    gap: 10px;
-    margin: 20px;
-    border: 1px solid rgba(238, 238, 238, 0.713);
-    max-width: 310px;
-    box-shadow: 5px 5px; /*Discover from serendipity. We could add cool shadow effects!*/
-}
-
-.info .text-header {
-    margin: 0px;
-    font-size: 12px;
-    font-weight: 900;
-    color: chocolate;
-}
-
-.info .subtext {
-    font-size: 8px;
-    color: black;
-    text-align: center;
-}
-
-
-.main-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9); /*With RGBa we can set alpha for opacity*/
     width: 100%;
-    padding: 6px;
-    gap: 10px;
-    margin-bottom: 20px;
+    height: 80%;
+    display: block;
+    margin: 0px auto 1rem auto;
 }
 
-.Gallery {
+.info-text {
+    position: relative;
+    bottom: .2rem;
+    font-size: .5rem;
+    font-weight: normal;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    line-height: .8rem;
+}
+
+.container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    flex: 0 0 auto;
-    gap: 5px;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
-.Gallery img {
-    border: 4px solid chocolate;
-    border-radius: 10px;
-    height: 100px;
-    width: 150px;
-    object-fit: cover;
+.polaroid {
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);
+    width: 25vw;
+    height: 30vh;
+    margin-bottom: 4rem;
+    transform-origin: top right;
 }
 
-.sign-up {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(248, 125, 36, 0.99);
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 40px;
-    gap: 10px;
-    width: 440px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.polaroid:hover {
+    transition: all ease-in-out 1s;
+    transform: rotate(-5deg);
+    cursor: pointer;
 }
 
-.text-su > * {
-    color: white;
+#gallery {
+    background-color: #BFBFBF;
 }
 
-.text-su .text {
+
+
+.pic {
+    height: 100%;
+    width: 100%;
+}
+
+.frame {
+    padding: .5rem;
+    width: 25vw;
+    height: 30vh;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transform-origin: none;
+    transition: all 0.2s ease-in-out;
+}
+.frame:hover {
+    transform: rotate(0deg);
+    filter: grayscale(0%);
+    box-shadow:1px 1px 10px #66c0b39a;
+}
+
+.arrow_box {
+    margin: 0 13rem 0 13rem;
+    position: relative;
+    border:1px solid #66c0b3;
+    /* border-radius: 2rem; */
+    /* border: 4px solid #2e363b; */
+    padding: 1.5rem;
+}
+
+
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 71%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(46, 54, 59, 0);
+	border-top-color: #66c0b3;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+
+.Vito {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 5px solid #fff;
+    box-shadow: 
+    inset 1px 1px 4px rgba(0,0,0,0.5),
+    0 2px 3px rgba(0,0,0,0.6);
+    margin: .5rem auto 1rem auto;
+    left: 13%;
+    padding: -2rem;
+}
+
+.message {
+    font-size: 1rem;
+    margin: auto;
+}
+
+.name {
     font-weight: bolder;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 1rem;
 }
 
-.sign-up-button{
-    padding: 0px 20px;
-    background-color: rgba(248, 125, 36, 0.99);
-    border-color: white;
-    color: white;
-    border-color: 1px solid white;
-    border-radius: 5px;
+footer {
+    background-color: #66c0b3;
+    padding: .6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#copy {
+    text-align: center;
+    font-size: .8rem;
 }
 
-.sign-up-button:hover {
-    background-color: white;
-    color: chocolate;
-    border-color: white;
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .polaroid {
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .arrow_box {
+        margin: 0 5rem 0 5rem;
+    }
+
+    .Vito {
+        left: 18%;
+    }
+
+
 }
+

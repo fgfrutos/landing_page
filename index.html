@@ -5,69 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
     <title>Landing Page</title>
 </head>
 <body>
-    <div class="header">
-        <a class="toggle">
-            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"><!--This is used as a trial in setting a header menu-->
-            </span>
-        </a>
-        <a href="#"><img id="logo" src="./images/logo.webp"></a> <!--I have to think if is better logo or title-->
-        <div class="header-links">
-            <div class="link">About</div>
-            <div class="link">Contact</div>
-            <div class="link">Shop</div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="main-top">
-            <div class="Title">Welcome to The Border Collie!</div>
-            <div class="main-middle">
-                <div class="Subtitle">Explore this page to discover...</div>
-                <div class="info-cont">
-                    <div class="info">
-                        <p class="text-header">History</p>
-                        <p class="subtext">Did you know that most border collies has a know common antecesor? </p>
-                    </div>
-                    <div class="info">
-                        <p class="text-header">Facts</p>
-                        <p class="subtext">It is said that border collies are the most intelligent of all dogs (but <a href="https://en.wikipedia.org/wiki/Morgan%27s_Canon">see</a>)</p>
-                    </div>
-                    <div class="info">
-                        <p class="text-header">Cares</p>
-                        <p class="subtext"> Border Collies are very energetic dogs! so make sure that your dog is fully exhausted at the end of the day </p>
-                    </div>        
-                </div>  
+    <main>
+        <!--The main thing stuff-->
+        <section id="starting-site">
+            <div class="header">
+                <button>Sign in</button>
             </div>
-        </div>    
-        <div class="main-bottom">
-            <div class="Gallery-Title">You can see our gallery here!</div>
-            <div class="Gallery">
-                <img class="Pic" src="./images/Pic1.jpg">
-                <img class="pic" src="./images/Pic2.jpg">
-                <img class="Pic" src="./images/Pic3.jpg">
-                <img class="Pic" src="./images/Pic4.jpg">
-                <img class="Pic" src="./images/Pic5.jpg">
-                <img class="Pic" src="./images/Pic6.jpg">
+            <!--Starting view-->
+            <div class="content">
+                <h1 id="title">The Border Collie</h1>
+                <p id="sub-title">A Border Collie support account</p>    
             </div>
-        </div>
-        <div class="sign-up"> 
-            <div class="text-su">
-                <div = class="text">Sign up, Border Collie lover!</div>
-                <div>Sign up to stay tune of our latest news</div>
+        </section>
+        <section id="information">
+            <h2>Discover</h2>
+            <div class="container">
+                <div class="polaroid">
+                    <h3>History</h3>
+                    <img class="info" src="images/Pic1.jpg">
+                    <p class="info-text">Did you know that the first Border Collie was born in Scotland?</p>
+                </div>
+                <div class="polaroid">
+                    <h3>Cares</h3>
+                    <img class="info" src="images/Pic2.jpg">
+                    <p class="info-text">Border Collies are very energetic dogs, so give your puppie a walk very often!</p>
+                </div>
+                <div class="polaroid last">
+                    <h3>Facts</h3>
+                    <img class="info" src="images/Pic3.jpg">
+                    <p class="info-text">It is said that Border Collies are the most intelligent of all dogs. They can learn lots of tricks!</p>
+                </div> 
+            </div>   
+        </header>
+        <section id="gallery">
+            <h2>See our gallery</h2>
+            <!--Here will be displayed the images-->
+            <div class="container pics">
+                <div class="polaroid frame">
+                    <img class="pic" src="images/Pic4.jpg">
+                </div>
+                <div class="polaroid frame">
+                    <img class="pic" src="images/Pic5.jpg">
+                </div>
+                <div class="polaroid frame">
+                    <img class="pic" src="images/Pic6.jpg">
+                </div> 
+                <div class="polaroid frame">
+                    <img class="pic" src="images/pic7.jpg">
+                </div>    
+                <div class="polaroid frame">
+                    <img class="pic" src="images/pic8.jpg">
+                </div>    
+                <div class="polaroid frame">
+                    <img class="pic" src="images/pic9.jpg">
+                </div>
             </div>
-            <button class="sign-up-button">Sign Up</button>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="text">The Odin Project <span>&copy;</span> | <a href="https://github.com/franfrutos">franfrutos</a></div>
-    </div>
+        </section>
+        <main>
+            <h2>Meet our friends!</h2>
+            <div class="arrow_box">
+                    <p class="message">Hey! I'm Vito, a Border Collie living in Spain. 
+                        My family treats me very well! although I make some mistakes...
+                         Don't judge me, we're all a mess!
+                    </p>
+                    <p class="name">- Vito</p>
+            </div>
+            <img class="Vito" src="images/Vito.png">
+
+        </main>
+
+    </main>
+    <footer>
+        <!--The copyright stuff-->
+        <p id="copy">frangfr &copy 2022</p>
+    </footer>
 </body>
 </html>
